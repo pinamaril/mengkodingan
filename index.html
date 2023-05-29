@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Mengkodingan - Bootcamp masa kini</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="/css/main.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<h1 class="header__brand">Mengkodingan</h1>
+
+				<nav class="menu">
+					<a class="menu__item" href="#home">Beranda</a>
+					<a class="menu__item" href="#course">Course</a>
+					<a class="menu__item" href="#blog">Blog</a>
+					<a class="menu__item" href="#contact">Contact</a>
+				</nav>
+
+				<div class="header__ctas">
+					<a class="header__button" href="">Sign Up</a>
+
+					<div class="menu_toggle" onclick="hamburgerMenu()">
+						<span class="menu_toggle__line"></span>
+						<span class="menu_toggle__line"></span>
+						<span class="menu_toggle__line"></span>
+					</div>
+
+					<nav class="menu_hamburger menu_hamburger--hidden">
+						<a class="menu_hamburger__item" href="#home">Beranda</a>
+						<a class="menu_hamburger__item" href="#course">Course</a>
+						<a class="menu_hamburger__item" href="#blog">Blog</a>
+						<a class="menu_hamburger__item" href="#contact">Contact</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<div class="container">
+			<section class="hero">
+				<div class="hero__content">
+					<h1 class="section__heading hero__heading">
+						Raih impian bersama<br />
+						Mengkodingan
+					</h1>
+					<p class="hero__text">
+						Ikuti kursus koding online untuk meningkatkan kompetensi skill dan
+						meraih impian sebagai tenaga ahli pemrograman
+					</p>
+
+					<a class="hero__button" href="">Learn More</a>
+				</div>
+
+				<div class="hero__display"></div>
+			</section>
+
+			<section class="course">
+				<div class="course__header">
+					<h2 class="section__heading course__heading">Course</h2>
+					<p class="section__subheading course__subheading">
+						Kelas bootcamp sesuai dengan kebutuhan industri terkini hanya untuk
+						kamu!
+					</p>
+				</div>
+
+				<div class="course__cards">
+					<div class="course__card">
+						<img
+							class="course__card__image"
+							src="/images/course-front-end.jpg"
+						/>
+
+						<div class="course__card__content">
+							<p class="course__card__title">Front-End Developer</p>
+							<p class="course__card__text">
+								Kelas bootcamp dengan belajar teknologi Front-End untuk menjadi
+								Front-End Developer yang handal
+							</p>
+
+							<a class="course__card__button" href="">Daftar Sekarang</a>
+						</div>
+					</div>
+
+					<div class="course__card">
+						<img
+							class="course__card__image"
+							src="/images/course-back-end.jpg"
+						/>
+
+						<div class="course__card__content">
+							<p class="course__card__title">Back-End Developer</p>
+							<p class="course__card__text">
+								Kelas bootcamp dengan belajar teknologi Back-End untuk menjadi
+								Back-End Developer yang handal
+							</p>
+
+							<a class="course__card__button" href="">Daftar Sekarang</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="blog">
+				<div class="blog__header">
+					<h2 class="section__heading blog__heading">Blog</h2>
+					<p class="section__subheading blog__subheading">
+						Tetap terhubung dengan blog terbaru dari
+						<strong>Mengkodingan</strong>
+					</p>
+				</div>
+
+				<div class="blog__content">
+					<div class="blog__card">
+						<a href=""
+							><img class="blog__card__image" src="/images/blog-image.jpg"
+						/></a>
+
+						<div class="blog__card__content">
+							<a class="blog__card__title" href="">Tips belajar html</a>
+							<p class="blog__card__text">
+								Html adalah komponen paling penting dalam pengembangan website,
+								nah kadang agak sulit nih buat belajarnya, penasaran cara
+								mudahnya gimana?, ayo mari kita pelajari bersama.
+							</p>
+						</div>
+					</div>
+
+					<div class="blog__list">
+						<h3 class="blog__list__heading">Artikel lain:</h3>
+						<a class="blog__list__item" href=""
+							>Perbedaan em, rem dan px pada css</a
+						>
+						<a class="blog__list__item" href=""
+							>Tips dan trick dalam menggunakan VSCODE</a
+						>
+						<a class="blog__list__item" href="">Konfigurasi dasar Vim</a>
+						<a class="blog__list__item" href=""
+							>Mengenal Grid agar layouting berasa seperti superman</a
+						>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact">
+				<div class="contact__header">
+					<h2 class="section__heading contact__heading">Contact</h2>
+					<p class="section__subheading contact__subheading">
+						Tertarik lebih lanjut dengan bootcamp <strong>Mengkodingan?</strong
+						><br />
+						Ayo daftar, dan raih mimpimu menjadi Software developer sekarang
+						juga!
+					</p>
+				</div>
+
+				<form class="contact__form">
+					<input
+						class="contact__form__input_text"
+						type="email"
+						placeholder="Email..."
+						required
+					/>
+					<button class="contact__form__submit" type="submit">Submit</button>
+				</form>
+			</section>
+		</div>
+
+		<footer class="footer">
+			<p class="footer__copyright">
+				Mengkodingan - <span class="footer__copyright__year"></span>
+			</p>
+		</footer>
+
+		<script src="/js/main.js"></script>
+	</body>
+</html>
